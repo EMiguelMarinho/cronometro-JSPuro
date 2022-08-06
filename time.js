@@ -37,18 +37,18 @@ function runTime (onTime) {
             seconds.innerText = newSeconds
         }, oneSecond);
         startMinute = setInterval(() => {
-            if(seconds.innerText > 58) seconds.innerText = '-1'
+            if(minutes.innerText > 58) minutes.innerText = '-1'
             let newMinutes = Number(minutes.innerText) + 1;
         
             if(newMinutes < 10) newMinutes = '0' + newMinutes
             minutes.innerText = newMinutes
-        }, oneMinute);
+        }, 500);
         startHour = setInterval(() => {
             let newHours = Number(hours.innerText) + 1;
         
             if(newHours < 10) newHours = '0' + newHours
             hours.innerText = newHours
-        }, oneHour);
+        }, 500);
     };
     if(!onTime){
         clearInterval(startSecond);
