@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+body{
+    background-color: #A7D7D7;
+}
+
+.container{
+    margin: auto;
+    width: 1000px;
+    height: 80vh;
+    display: flex;
+}
+
+.info{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info h1{
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+}
+
+.name-title{
+    font-weight: 100;
+    font-style: italic;
+}
+
+.info p{
+    text-align: left;
+    font-weight: 100;
+}
+
+.stopwatch{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column  ;
+}
+
+.time, .buttons-time{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#container-hours, #container-minutes, #container-seconds, #container-miliseconds{
+    background-color: aliceblue;    
+    font-size: 80px;
+    font-weight: 600;
+    padding: 10px;
+    font-family: 'pf-centro-slab-pro-black', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 15px 0px 15px;
+    border-radius: 20px;
+}
+
+#container-hours p, #container-minutes p, #container-seconds p, #container-miliseconds p{
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.pointer{
+    font-size: 80px;
+}
+
+.start{
+    padding: 10px;
+    font-size: 24px;
+    margin: 40px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #151C48;
+    color: white;
+}
+
+.start:hover{
+    background-color: #174580;
+}
+
+.stop, .reset{
+    padding: 10px;
+    font-size: 24px;
+    margin: 40px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.stop:hover, .reset:hover{
+    background-color: #5BB8D2;
+}
+
+footer{
+    height: 20vh;
+    width: 100vw;
+}
+
+.container-logos{
+    margin: auto;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.logoFooter{
+    height: 40%;
+    margin: 0px 15px;
+}
+
+.logoFooter:hover{
+    height: 45%;
+    transition: 0.3s;
+}
+
+.footer-txt{
+    height: 20%;
+    text-align: center;
+    background-color: #0f1646;
+    color: white;
+    font-weight: 100;
+}
+
+.footer-name{
+    font-style: italic;
+}
