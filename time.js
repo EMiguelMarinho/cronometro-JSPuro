@@ -42,13 +42,13 @@ function runTime (onTime) {
         
             if(newMinutes < 10) newMinutes = '0' + newMinutes
             minutes.innerText = newMinutes
-        }, 500);
+        }, oneMinutes);
         startHour = setInterval(() => {
             let newHours = Number(hours.innerText) + 1;
         
             if(newHours < 10) newHours = '0' + newHours
             hours.innerText = newHours
-        }, 500);
+        }, oneHour);
     };
     if(!onTime){
         clearInterval(startSecond);
