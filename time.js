@@ -14,6 +14,7 @@ const oneMinute = 60 * oneSecond;
 const oneHour = 60 *oneMinute;
 
 let onTime = false;
+let clickOnStart = 0;
 
 let startMilisecond;
 let startSecond;
@@ -22,6 +23,7 @@ let startHour;
 
 function runTime (onTime) {
     if(onTime){
+        if(clickOnStart !== 1) return
         startMilisecond = setInterval(() => {
             if(miliseconds.innerText > 98) miliseconds.innerText = '-1'
             let newmiliseconds = Number(miliseconds.innerText) + 1;
@@ -66,17 +68,20 @@ const resetTime = () => {
 }
 
 btnStart.addEventListener('click', function(){
+    clickOnStart = clickOnStart + 1;
     onTime = true;
     runTime(onTime);
     btnStart.innerText = 'Retomar'
 })
 
 btnStop.addEventListener('click', function(){
+    clickOnStart = 0;
     onTime = false;
     runTime(onTime);    
 })
 
 btnReset.addEventListener('click', function(){
+    clickOnStart = 0 ;
     onTime = false;
     runTime(onTime);
     resetTime()
