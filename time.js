@@ -70,8 +70,8 @@ const resetTime = () => {
 btnStart.addEventListener('click', function(){
     clickOnStart = clickOnStart + 1;
     onTime = true;
-    runTime(onTime);
     btnStart.innerText = 'Retomar'
+    runTime(onTime);
 })
 
 btnStop.addEventListener('click', function(){
